@@ -1,0 +1,8 @@
+# Statically link the C runtime on Windows so the built .exe is fully
+# self-contained -- no vcruntime140.dll and no Visual C++ Redistributable
+# needed on the machine that runs it. Lets you hand someone a single file.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
+
+[target.aarch64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
