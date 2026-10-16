@@ -1,0 +1,12 @@
+[package]
+name = "ortrail"
+version = "1.0.0"
+edition = "2021"
+description = "A text-mode clone of the classic Oregon Trail, written in Rust with zero dependencies."
+
+# Deliberately dependency-free: the game ships its own PRNG so that it builds
+# offline on any machine with a Rust toolchain.
+[dependencies]
+
+[profile.release]
+opt-level = 2

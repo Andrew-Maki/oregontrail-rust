@@ -1,0 +1,5 @@
+# Build artifacts
+/target
+
+# Runtime state written next to the executable
+ortrail_top_ten.txt
